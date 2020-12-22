@@ -1,12 +1,50 @@
-.main
+.intro
     position: relative
-    width: 100vw
-    height: 100vh
-    background: url(../img/main_bg_one.png) center center/cover no-repeat
-    padding: 22px 45px
+    .slick-arrow
+        position: absolute
+        bottom: 120px
+        background-color: transparent
+        border: none
+        z-index: 100
+        cursor: pointer
+    .slick-prev
+        left: 189px
+    .slick-next
+        left: 266px
+    .slick-dots
+        position: absolute
+        bottom: 124px
+        left: 102px
+        display: flex
+        li
+            margin: 0 10px 0
+            button
+                height: 8px
+                width: 8px
+                background-color: $grey
+                opacity: 0.2
+                border-radius: 100%
+                font-size: 0
+                border: none
+        .slick-active
+            button
+                background-color: #757575
+                opacity: 1
+    &__slider
+        padding: 22px 45px
+        height: 100vh
+
+        &--bg
+            &-one
+                background: url(../img/main_bg_one.png) center center/cover no-repeat
+            &-two
+                background: url(../img/main_bg_two.png) center center/cover no-repeat
     &__header
         display: flex
         align-items: center
+        &-logo
+            width: 67px
+            height: 77px
         &-contact
             display: flex
             align-items: center
@@ -55,24 +93,6 @@
                 height: 35%
                 background-color: $grey
 
-        &-triggers
-            display: flex
-            align-items: center
-            margin: 253px 0 0 65px
-            .trigger
-                &__circle
-                    height: 8px
-                    width: 8px
-                    background-color: $grey
-                    opacity: 0.2
-                    border-radius: 100%
-                    &_active
-                        background-color: #757575
-                        opacity: 1
-                &__arrow
-                    margin: 0 25px 0 0
-            .margin
-                margin: 0 37px 0  26px
     &__descr
         position: absolute
         top: 237px
@@ -101,10 +121,13 @@
             cursor: pointer
 
     &__footer
+        position: absolute
+        bottom: 22px
         display: flex
         align-items: center
         justify-content: space-between
-        margin: 45px 0 0 65px
+        width: calc( 100% -  155px)
+        margin: 0 0 0 65px
         &-left
             display: flex
             align-items: center
@@ -117,5 +140,11 @@
                 text-transform: uppercase
                 color: $grey
                 opacity: 0.7
-        &_street
+        &-street
             margin: 0 87px 0 0
+        &-subway, &-street
+            display: flex
+            align-items: center
+            justify-content: center
+            img
+                margin: 0 10px 0 0
