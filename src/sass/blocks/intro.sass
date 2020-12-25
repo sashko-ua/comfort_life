@@ -8,13 +8,13 @@
         z-index: 100
         cursor: pointer
     .slick-prev
-        left: 189px
+        left: 130px
     .slick-next
-        left: 266px
+        left: 215px
     .slick-dots
         position: absolute
         bottom: 124px
-        left: 102px
+        left: 35px
         display: flex
         li
             margin: 0 10px 0
@@ -66,37 +66,35 @@
                         background-color: $main-color
             .ua-img
                 margin: 0 0 0 49px
-    &__nav
-        display: inline-flex
-        align-items: center
-        flex-direction: column
-        height: 125px
-        width: 25px
-        margin: 148px 0 0
-        span
-            color: #757575
-            transform: rotate(-90deg)
-        .active
-            color: $main-color
+    // &__nav
+    //     display: inline-flex
+    //     align-items: center
+    //     flex-direction: column
+    //     height: 125px
+    //     width: 25px
+    //     margin: 148px 0 0
+    //     span
+    //         color: #757575
+    //         transform: rotate(-90deg)
+    //     &--active
+    //         color: $main-color !important
 
-        &-divider
-            position: relative
-            width: 1px
-            height: 78px
-            margin: 10px 0
-            background-color: rgba(221,221,221, .4)
-            &_active
-                position: absolute
-                top: 0
-                left: 0
-                width: 100%
-                height: 35%
-                background-color: $grey
+    //     &-divider
+    //         position: relative
+    //         width: 1px
+    //         height: 78px
+    //         margin: 10px 0
+    //         background-color: rgba(221,221,221, .4)
+    //         &_active
+    //             position: absolute
+    //             top: 0
+    //             left: 0
+    //             width: 100%
+    //             height: 35%
+    //             background-color: $grey
 
     &__descr
-        position: absolute
-        top: 237px
-        left: 110px
+        margin: 125px 0 0
         &-header
             font-style: normal
             font-weight: normal
@@ -126,8 +124,7 @@
         display: flex
         align-items: center
         justify-content: space-between
-        width: calc( 100% -  155px)
-        margin: 0 0 0 65px
+        width: calc( 100% -  90px)
         &-left
             display: flex
             align-items: center

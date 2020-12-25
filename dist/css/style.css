@@ -43,17 +43,17 @@ li {
 }
 
 .intro .slick-prev {
-  left: 189px;
+  left: 130px;
 }
 
 .intro .slick-next {
-  left: 266px;
+  left: 215px;
 }
 
 .intro .slick-dots {
   position: absolute;
   bottom: 124px;
-  left: 102px;
+  left: 35px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -144,54 +144,8 @@ li {
   margin: 0 0 0 49px;
 }
 
-.intro__nav {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  height: 125px;
-  width: 25px;
-  margin: 148px 0 0;
-}
-
-.intro__nav span {
-  color: #757575;
-  -webkit-transform: rotate(-90deg);
-      -ms-transform: rotate(-90deg);
-          transform: rotate(-90deg);
-}
-
-.intro__nav .active {
-  color: #A68E52;
-}
-
-.intro__nav-divider {
-  position: relative;
-  width: 1px;
-  height: 78px;
-  margin: 10px 0;
-  background-color: rgba(221, 221, 221, 0.4);
-}
-
-.intro__nav-divider_active {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 35%;
-  background-color: #DDDDDD;
-}
-
 .intro__descr {
-  position: absolute;
-  top: 237px;
-  left: 110px;
+  margin: 125px 0 0;
 }
 
 .intro__descr-header {
@@ -236,8 +190,7 @@ li {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: calc( 100% -  155px);
-  margin: 0 0 0 65px;
+  width: calc( 100% -  90px);
 }
 
 .intro__footer-left {
@@ -280,4 +233,55 @@ li {
 .intro__footer-subway img,
 .intro__footer-street img {
   margin: 0 10px 0 0;
+}
+
+@media (max-width: 576px) {
+  .intro__header-contact {
+    margin: 0 0 0 auto;
+  }
+
+  .intro__descr-text {
+    font-size: 52px;
+  }
+
+  .intro__footer-left {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+
+  .intro__footer-street {
+    margin: 0 30px 0 0;
+  }
+}
+
+@media (max-width: 420px) {
+  .intro__slider {
+    padding: 22px 20px;
+  }
+
+  .intro__header-contact .ua-img {
+    margin: 0 0 0 15px;
+  }
+
+  .intro__header-contact .phone {
+    display: none;
+  }
+
+  .intro__descr {
+    position: absolute;
+    top: 0;
+  }
+
+  .intro__descr-text {
+    font-size: 40px;
+    line-height: 55px;
+  }
+
+  .intro__descr-btn {
+    margin: 15px 0 0;
+  }
+
+  .intro__footer {
+    width: calc( 100% -  40px);
+  }
 }
